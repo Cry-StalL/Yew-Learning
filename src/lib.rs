@@ -1,6 +1,11 @@
 use yew::prelude::*;
+use stylist::yew::styled_component;
 
-#[function_component]
+#[styled_component]
 pub fn App() -> Html {
-    html! { "Hello World!" }
+    html! {
+        <div class={css!("color: red;")}>
+            {"Hello World!"}
+        </div>
+    }
 }
