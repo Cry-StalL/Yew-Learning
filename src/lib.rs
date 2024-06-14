@@ -1,10 +1,11 @@
 use yew::prelude::*;
-use stylist::yew::styled_component;
+use stylist::yew::use_style;
 
-#[styled_component]
+#[function_component]
 pub fn App() -> Html {
+    let style = use_style!("color: red; font-size: 20px;");
     html! {
-        <div class={css!("color: red;")}>
+        <div class={style}>
             {"Hello World!"}
         </div>
     }

@@ -962,6 +962,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "684929eeaa18b44296533430c1453f6ea0ebff8cc7182185657fc7887ad5b9d4"
 dependencies = [
  "fastrand",
+ "gloo-events 0.2.0",
  "instant",
  "once_cell",
  "serde",
